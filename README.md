@@ -22,4 +22,4 @@ parameters in the request (Channel_1 and Channel_2). This could avoid some WAF.
 
 # 中文: 我不负责什么用这个工具
 
-这个脚本使用《curl》通过代理列表发送要求，我们必须在执行之前添加该代理列表. 在要求可以用两个参数 (Canal_1 Canal_2). 这样可以避免一些 WAF.
+这个脚本使用《curl》通过代理列表发送要求，我们必须在执行之前添加该代理列表. 在要求可以用两个参数 (Canal_1和Canal_2). 这样可以避免一些 WAF.

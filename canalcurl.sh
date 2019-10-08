@@ -199,7 +199,7 @@ function exitt {
 	if [ "$ch" -gt "2" ];then
 
 		echo
-		read -p $'\e[31mINFO: '"$(cat .invalid_parameters1 | wc -l)"' worng request, do you want try it again? (y/n)' repeat
+		read -p $'\e[31mINFO: '"$(cat .invalid_parameters1 | wc -l)"' worng request, do you want try it again? (y/n): ' repeat
 
 		if [ "$repeat" == "y" ];then
 
@@ -207,7 +207,7 @@ function exitt {
 			mv .invalid_parameters2 .tmp2 2>/dev/null
 			file1=".tmp1"
 			file2=".tmp2"
-			read -p $'Do you want check the proxies again?(y/n)' filter
+			read -p $'Do you want check the proxies again?(y/n): ' filter
 			if [ "$filter" != "n" ];then
 
 				prox=0
@@ -288,7 +288,7 @@ if [ $(echo $request | grep 'Canal_[1-2]' | wc -c) -gt 5 ];then
 
 		read -p $'\e[95mEnter file for parameter Canal_1: \e[0m' file1
 		read -p $'\e[95mEnter file for parameter Canal_2: \e[0m' file2
-		read -p $'\e[92mDo you want try all combinations or send the parameters in parallel?(y for all combinations/n for parallel)' c
+		read -p $'\e[92mDo you want try all combinations or send the parameters in parallel?(y for all combinations/n for parallel): ' c
 
 	else
 

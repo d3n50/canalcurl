@@ -9,7 +9,7 @@ Fuerza bruta usando proxies - Brute Force 使用代理服务器
 # ESPAÑOL: No me hago responsable por el uso de esta herramienta.
 
 Este script utiliza <curl> para realizar las peticiones a través de una lista de proxies, la cual debemos añadir antes de
-ejecutarlo. Podemos utilizar un máximo de 2 parametros en la petición (Canal_1 y Canal_2). Esto nos puede permitir evitar WAFs.
+ejecutarlo. Podemos utilizar un máximo de 2 parametros en la petición (Canal_1 y Canal_2). Esto nos puede ayudar a evitar WAFs.
 
 
 
